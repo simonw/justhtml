@@ -2525,7 +2525,7 @@ class Tokenizer:
         return False
 
 
-Tokenizer._STATE_HANDLERS = [
+Tokenizer._STATE_HANDLERS = [  # type: ignore[attr-defined]
     Tokenizer._state_data,
     Tokenizer._state_tag_open,
     Tokenizer._state_end_tag_open,
