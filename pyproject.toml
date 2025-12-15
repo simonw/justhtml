@@ -86,18 +86,6 @@ warn_redundant_casts = true
 show_error_codes = true
 files = ["src/justhtml"]
 
-[[tool.mypy.overrides]]
-module = [
-    "justhtml.tokenizer",
-    "justhtml.treebuilder",
-    "justhtml.treebuilder_modes",
-    "justhtml.treebuilder_utils",
-    "justhtml.selector",
-    "justhtml.entities",
-]
-disallow_untyped_defs = false
-check_untyped_defs = false
-
 [tool.coverage.run]
 branch = true
 source = ["src/justhtml"]
